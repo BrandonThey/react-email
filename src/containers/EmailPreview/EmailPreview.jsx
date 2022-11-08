@@ -13,20 +13,22 @@ const EmailPreview = (props) => {
         </>
     ))
     return(
-        <>
-            <section className="taskbar">
-                <button></button>
-                <button></button>
-            </section>
+        <section className="email-preview">
+            <section className="side-email-preview">
+                <section className="taskbar">
+                    <button></button>
+                    <button></button>
+                </section>
 
-            <section className="emailCards">
-                {renderedEmails}
+                <section className="emailCards">
+                    {renderedEmails}
+                </section>
             </section>
 
             <section className="emailDisplay">
                 {chosenEmail && <FullEmailCard userName={chosenEmail.userName} header={chosenEmail.header} content={chosenEmail.content}/>}
             </section>
-        </>
+        </section>
     )
 }
 

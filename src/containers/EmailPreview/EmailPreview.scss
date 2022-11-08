@@ -1,0 +1,16 @@
+.email-preview{
+    display: flex;
+    flex-direction: row;
+}
+
+.side-email-preview{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    border: 2px black solid;
+}
+
+.emailDisplay{
+    border: 2px black solid;
+    width: 75%;
+}

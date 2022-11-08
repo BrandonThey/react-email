@@ -3,6 +3,7 @@ import "./FullEmailCard.scss"
 const FullEmailCard = (props) => {
 
     const {userName, header, content} = props;
+    console.log(userName, header, content)
     return (
         <>
             <p className="userName">{userName}</p>
