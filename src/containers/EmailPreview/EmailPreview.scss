@@ -7,19 +7,67 @@
     display: flex;
     flex-direction: column;
     width: 25%;
-    border: 2px black solid;
 }
 
 .emailDisplay{
-    border: 2px black solid;
+    border-left: 1px #0095ff solid;;
     width: 75%;
 }
 
 .taskbar{
     display: flex;
     justify-content: space-around;
+    margin: 5px;
 }
 
 .filter-dropdown{
-    width: 40%;
+    width: 50%;
+    background-color: white;
+    border: 1px solid #0095ff;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+}
+
+::placeholder{
+    color: black;
+}
+.compose-btn{
+  background-color: #0095ff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 0;
+  outline: none;
+  padding: 8px .8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.compose-btn:hover,
+.compose-btn:focus {
+  background-color: #07c;
+}
+
+.compose-btn:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.compose-btn:active {
+  background-color: #0064bd;
+  box-shadow: none;
 }

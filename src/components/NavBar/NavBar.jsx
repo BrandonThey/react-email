@@ -3,7 +3,7 @@ import { GiNestedHexagons } from "react-icons/gi"
 const NavBar = () => {
 
     return (
-        <section className="NavBar">
+        <section>
             <section className="logo">
                 <GiNestedHexagons />
                 <h3>Relay.io</h3>

@@ -23,7 +23,7 @@ const EmailPreview = (props) => {
         <section className="email-preview">
             <section className="side-email-preview">
                 <section className="taskbar">
-                    <button className="compose-btn">compose</button>
+                    <button className="compose-btn">Compose +</button>
                     <section className="filter-dropdown">
                         <Multiselect 
                             placeholder="Filter by"
