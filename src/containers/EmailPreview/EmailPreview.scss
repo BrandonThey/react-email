@@ -14,3 +14,12 @@
     border: 2px black solid;
     width: 75%;
 }
+
+.taskbar{
+    display: flex;
+    justify-content: space-around;
+}
+
+.filter-dropdown{
+    width: 40%;
+}

@@ -1,17 +1,18 @@
 import "./SideNav.scss"
-
+import { AiOutlineMail } from "react-icons/ai"
+import { FaRegTrashAlt } from "react-icons/fa"
 const SideNav = () => {
 
     return(
         <>
             <section className="inbox">
-                {/* icon */}
+                <AiOutlineMail />
                 <p>Inbox</p>
                 {/* unread count */}
             </section>
 
             <section className="trash">
-                {/* trash icon */}
+                <FaRegTrashAlt />
                 <p>Trash</p>
             </section>
         </>

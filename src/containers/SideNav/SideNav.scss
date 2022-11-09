@@ -1,0 +1,25 @@
+.inbox{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+    p{
+        text-align: center;
+        padding: 0;
+        padding-bottom: 5px;
+        margin: 0;
+        height: 100%;
+    }
+}
+
+.trash{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+    p{
+        text-align: center;
+        padding: 0;
+        padding-bottom: 5px;
+        margin: 0;
+        height: 100%;
+    }
+}

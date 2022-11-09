@@ -2,6 +2,7 @@ import EmailPreviewCard from "../../components/EmailPreviewCard/EmailPreviewCard
 import FullEmailCard from "../../components/FullEmailCard/FullEmailCard";
 import "./EmailPreview.scss"
 import { useEffect, useState } from "react";
+import Multiselect from "multiselect-react-dropdown";
 const EmailPreview = (props) => {
     const {emailsArr} = props;
 
@@ -17,13 +18,50 @@ const EmailPreview = (props) => {
     useEffect(() => {
         setChosenEmail(emailsArr[chosenEmailIndex])
     }, [chosenEmailIndex])
-    
+
     return(
         <section className="email-preview">
             <section className="side-email-preview">
                 <section className="taskbar">
-                    <button>compose</button>
-                    <button>filter</button>
+                    <button className="compose-btn">compose</button>
+                    <section className="filter-dropdown">
+                        <Multiselect 
+                            placeholder="Filter by"
+                            displayValue="key"
+                            groupBy="group"
+                            options={[
+                                {
+                                    group: "Importance",
+                                    key: "High"
+                                },
+                                {
+                                    group: "Importance",
+                                    key: "Medium"
+                                },
+                                {
+                                    group: "Importance",
+                                    key: "Low"
+                                },
+                                {
+                                    group: "Date",
+                                    key: "Most Recent"
+                                },
+                                {
+                                    group: "Date",
+                                    key: "Oldest"
+                                },
+                                {
+                                    group: "Type",
+                                    key: "Personal"
+                                },
+                                {
+                                    group: "Type",
+                                    key: "Work"
+                                }
+                            ]}
+                            showCheckbox
+                        />
+                    </section>
                 </section>
 
                 <section className="emailCards">
