@@ -1,3 +1,4 @@
+import mainUserIcon from "./main_user_icon.png"
 const emails = [
     {
         userName: "Jason Veum",
@@ -5,7 +6,9 @@ const emails = [
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         importance: "high",
         date: "11/08/2022",
-        type: "Work"
+        type: "Work",
+        userEmail: "jasonveum@synergy.io",
+        userThumbnail: mainUserIcon
     },
     {
         userName: "Ollie Larson",
@@ -13,7 +16,9 @@ const emails = [
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         importance: "high",
         date: "11/07/2022",
-        type: "Work"
+        type: "Work",
+        userEmail: "ollielarson@synergy.io",
+        userThumbnail: mainUserIcon
     },
     {
         userName: "Spotify",
@@ -21,7 +26,9 @@ const emails = [
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         importance: "medium",
         date: "11/08/2022",
-        type: "Personal"
+        type: "Personal",
+        userEmail: "usersupport@spotify.com",
+        userThumbnail: mainUserIcon
     },
     {
         userName: "Estelle Wiegand",
@@ -29,7 +36,9 @@ const emails = [
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         importance: "high",
         date: "11/06/2022",
-        type: "Work"
+        type: "Work",
+        userEmail: "EstelleWiegand@synergy.io",
+        userThumbnail: mainUserIcon
     },
 ]
 
