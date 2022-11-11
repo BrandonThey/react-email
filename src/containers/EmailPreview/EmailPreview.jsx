@@ -23,30 +23,36 @@ const EmailPreview = (props) => {
 
     const selectHandler = (event) =>{
         setSelectedFilters(event)
+        let holderArr = [];
         if(selectedFilters){
+            //creating arrays for groupings and the filters under the groupings
             let groups = [];
             let filters = [];
+            //breaking down groupings and filters from the usestate array
             for(let i = 0; i < selectedFilters.length; i++){
                 groups.push(selectedFilters[i].group.toLowerCase())
                 filters.push(selectedFilters[i].key.toLowerCase())
             }
-            console.log(selectedFilters)
-            console.log(selectedFilters[0].key)
+        
+            //finding matched groupings and filters to filter out
             filteredEmails.map(email => {
-                console.log(groups)
-                console.log(filters)
-                console.log(email[groups[0]]) //accessing email keys using the group categories and 
-                //email[groups[0]] == filters[0]
-                // console.log(email.selectedFilters[0].group.toLowerCase())
+                for(let i = 0; i < selectedFilters.length; i++){
+                    if(groups[i] == "date"){
+                        console.log(email)
+                    }
+                    else if(email[groups[i]] == filters[i]){
+                        holderArr.push(email)
+                    }
+                }
             })
-            // setFilteredEmails(filteredEmails.map(email => {
-            //    if(email.importance == selectedFilters[0].key){
-            //     return email
-            //    }
-            // }))
+
+            setFilteredEmails(holderArr)
         }
     }
     
+    const removeHandler = () =>{
+        setFilteredEmails(emailsArr)
+    }
     if(filteredEmails){
         renderedEmails = filteredEmails.map((email,index) => (
             <>
@@ -83,7 +89,7 @@ const EmailPreview = (props) => {
                             groupBy="group"
                             options={filterItems}
                             onSelect={selectHandler}
-                            onRemove={selectHandler}
+                            onRemove={removeHandler}
                             showCheckbox
                         />
                     </section>
